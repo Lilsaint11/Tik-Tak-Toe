@@ -33,7 +33,7 @@ const boxClicked = (e) => {
         spaces[id] = currentPlayer;
         e.target.innerText = currentPlayer;
         e.target.classList.add("clicked");
-        /* if(playerWon()){
+         if(playerWon()){
              text.innerText = `${currentPlayer} won!`;
              winnerBanner.style.display = "flex";
              winnerBanner.classList.add("active");
@@ -52,7 +52,7 @@ const boxClicked = (e) => {
              }
             
              return;
-         }*/
+         }
 
         if (draw()) {
             text.innerText = "Draw";
@@ -367,14 +367,14 @@ const resetAll = () => {
     boxes.forEach((box) => {
         box.addEventListener("click", boxClicked);
     });
-    /*spaces.forEach((space, index)=>{
+    spaces.forEach((space, index)=>{
         spaces[index] = null;
     });
     
-    /*boxes.forEach(box =>{
+    boxes.forEach(box =>{
         box.innerText = "";
         box.classList.remove("clicked");
-    })*/
+    })
 
     winnerBanner.classList.remove("active");
     winnerBanner.style.display = "none";
