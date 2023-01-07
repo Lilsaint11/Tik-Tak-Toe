@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tiktaktoe.css">
+    <title>tiktaktoe</title>
+</head>
+<body>
+    <h1 class="header">Tik-Tak-Toe</h1>
+    <div class="board">
+        <div class="box" id="0"></div>
+        <div class="box" id="1"></div>
+        <div class="box" id="2"></div>
+        <div class="box" id="3"></div>
+        <div class="box" id="4"></div>
+        <div class="box" id="5"></div>
+        <div class="box" id="6"></div>
+        <div class="box" id="7"></div>
+        <div class="box" id="8"></div>
+    </div>
+    <div class="players-turn"></div>
+   <div class="scores">
+        <p><span class="p1">X</span> <span class="p1-score"></span></p>
+        <p><span class="draw">Draw</span> <span class="draw-score"></span></p>
+        <p><span class="p2">O</span> <span class="p2-score"></span></p>
+    </div>
+    <div class="instructions">
+        <h1>
+            <span style="color:rgb(197, 43, 197);">Tik-Tak-Toe</span> <span style="color:rgb(18, 18, 145);">Game</span>  
+        </h1>
+        <h3 class= "htp">How to play:</h3>
+        <h4>
+            TikTakToe is a very simple game which can be played between two players, each player have to pick between "X" and "O" and click on the boxes to play a turn, when a player has occupied all 3 spaces horizontally,vertically or diagonally, that player wins!!!.</br>PS: Player 1 picks a letter and starts the first round but after that, Anyone who wins a round plays first the next round.
+        </h4>
+        
+        <div class="players-letter">
+            <div class="choose-letter">
+                <h3>player 1: </h3>
+                <div class="letters">
+                    <span class="letter x">X</span>  OR <span class="letter o">O</span>
+                </div>
+            </div>    
+        </div>
+        <div class="opponent">
+            <p class="friend">play with friend</p>
+            <p class="computer">play with computer</p>
+        </div>
+        <h3 class="play">PLAY</h3>
+    </div>
+
+    <div class="winner-banner">
+        <span class="close-winner-banner">X</span>
+        <div class="winner"></div>
+        <button id="reset">Reset</button>
+    </div>
+    <button id="reset" class="main-reset">Reset</button>
+    <script src="tiktaktoe.js"></script>
+</body>
+</html>
